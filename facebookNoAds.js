@@ -1,5 +1,5 @@
 // Facebook No Ads
-// version 0.1
+// version 0.2
 // 27-11-2010
 // Copyright (c) 2010, Kybalion Labs - Kybalion Group
 // Released under the GPL license
@@ -29,7 +29,7 @@ function addCss(){
 	var style = document.createElement("style");
 		style.type = "text/css";
 		style.media="all";
-		style.innerHTML='#rightCol,#pagelet_ads{visibility:hidden;display:block;width:0;height:0;}#contentArea{width:95% !important;} .uiUfi{width:100%;}.profile_two_columns .right_column{width:75%;} #right_column #tab_canvas{width:100%;}';
+		style.innerHTML='#rightCol,#pagelet_ads{width:0 !important;height:0 !important;display:block !important;visibility:hidden !important;float:left;}#contentArea{width:95% !important;} #pagelet_tab_content{width:100%;}.profile_two_columns .right_column{width:75%;} .uiGrid.fbxphotos,.uiUfi,.photo_table,#photos_by_wrapper table,.notes_dashboard .note_content{width:100% !important;}.profile_two_columns #tab_canvas,.notes_dashboard .note_content{width:100%;}.photos_tab .has_extra .photos_tab_header{width:98%;}.notePermalinkMaincol{width:730px !important;}.profile .info_tab .info_section .profile_info dl.info dd {width: 555px !important;}';
 	document.getElementsByTagName('head')[0].appendChild(style);
 }
 
